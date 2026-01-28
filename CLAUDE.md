@@ -28,6 +28,14 @@ No test framework or linter is configured.
 
 Requires `.env` file with `ANTHROPIC_API_KEY`. See `.env.example`. Python 3.13+.
 
+## Dependency Management
+
+Always use `uv` for all dependency management. Never use `pip` directly.
+- Install deps: `uv sync`
+- Add a package: `uv add <package>`
+- Remove a package: `uv remove <package>`
+- Run commands: `uv run <command>`
+
 ## Architecture
 
 **Backend (`backend/`):**
